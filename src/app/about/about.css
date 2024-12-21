@@ -1,0 +1,151 @@
+#about-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 60vh;
+    align-items: center;
+    color: white;
+}
+
+#about-cont #about-left{
+    padding-left: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#about-cont #about-left h1{
+    width: 75%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#about-cont #about-left p{
+    font-size: large;
+    width: 75%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#about-btn{
+    /* bg-yellow-500 px-4 py-2 hover:bg-yellow-300 font-bold rounded-lg */
+    background-color: rgb(234 179 8);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    width: fit-content;
+    margin-top: 20px;
+}
+
+#about-btn:hover{
+    background-color: rgb(253 224 71);
+    color: black;
+}
+
+@keyframes rotateAnimate {
+    from {
+        bottom: 0;
+    }
+    to {
+        bottom: 80px;
+    }
+}
+
+#about-cont #about-right{
+    /* border: 15px solid rgb(0, 9, 71); */
+    border: 15px solid rgb(234 179 8);
+    border-radius: 50%;
+    position: relative;
+    animation: rotateAnimate 3s infinite ease-in-out 1s alternate;
+}
+
+#about-right #about-img{
+    /* rounded-full w-72 h-72 object-cover  */
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@media (max-width: 920px){
+    #about-right #about-img{
+        width: 280px;
+        height: 280px;
+    }
+    #about-cont #about-left h1{
+        font-size: 2.4rem;
+    }
+    #about-cont #about-left {
+        align-items: center;
+        width: 65%;
+    }
+    #about-btn{
+        margin-top: 30px;
+    }
+
+    #about-cont{
+        flex-direction: column-reverse;
+        gap: 32px;
+    }
+}
+
+@media (max-width: 768px){
+    #about-right #about-img{
+        width: 260px;
+        height: 260px;
+    }
+    #about-cont #about-left h1{
+        font-size: 2about
+    }
+    #about-cont #about-left{
+        width: 71%;
+    }
+}
+
+@media (max-width: 520px){
+    #about-right #about-img{
+        width: 240px;
+        height: 240px;
+    }
+    #about-cont #about-left{
+        width: 80%;
+    }
+    #about-cont{
+        min-height: 70vh;
+    }
+    #about-cont #about-left h1{
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 400px){
+    
+    #about-right #about-img{
+        width: 220px;
+        height: 220px;
+    }
+    #about-cont #about-left{
+        width: 90%;
+    }
+    #about-cont #about-left h1{
+        font-size: 1.45rem;
+    }
+}
+
+@media (max-width: 300px){
+    
+    #about-right #about-img{
+        width: 200px;
+        height: 200px;
+    }
+    #about-cont #about-left{
+        width: 95%;
+    }
+    #about-cont #about-left h1{
+        font-size: about-1.3r   }
+}
